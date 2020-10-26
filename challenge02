@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+icecream= ["flavor", "salty"]
+icecream.append(99)
+name= input("What is your name? ")
+
