@@ -107,7 +107,7 @@ while ask < 20:
         print("Great!!")
         break
     elif answer == "no":
-        print("Welp, looks like I\'m a bear!!")
+        print("Welp, looks like I\'m a Bear!!")
         win()
     else:
         yon()
@@ -117,10 +117,10 @@ while ask < 20:
     Q()
     answer= input("Do I have stripes? ").lower()
     if answer == "yes":
-        print("Welp, looks like I\'m a tiger!!")
+        print("Welp, looks like I\'m a Tiger!!")
         win()
     elif answer == "no":
-        print("Welp, looks like I\'m a lion!!")
+        print("Welp, looks like I\'m a Lion!!")
         win()
     else:
         ask += - 1

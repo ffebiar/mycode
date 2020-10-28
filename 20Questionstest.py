@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
  
-import os
-
-os.chdir("/home/student/mycode/")
- 
 ask= 0
 answer= " "
 answer2= " "
-
-def R():
-    os.system("python3 20Questionstest.py")
-    print("Restarting game")
 
 def win():
     print("Thanks for playing!!")
@@ -27,11 +19,6 @@ def end():
 
 def yon():
     print("Sorry, you can only answer Yes or No!")
-
-while True:
-    answer= input("Restart? ").lower()
-    if answer == "yes":
-        R()
 
 while True:
     print("Hello, this is the 20 Questions game!")
