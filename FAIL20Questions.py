@@ -1,28 +1,29 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-import os
+import os, time
 import sys
 
 os.chdir("/home/student/mycode/")
 
 ask= 0
 answer= " "
+answer2= " "
 
-def R():    # This is to restart the game
+def R():
     print("Restarting game...")
-    os.system("python3 test.py")
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
-    sys.exit()
+    os.system("python3 20Questions.py")
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
+    time.sleep(0.2)
     
-def win():  # Command to run when the script wins
+def win():
     print("Thanks for playing!!")
     print("I hope you had fun!!")
     answer= input("Do you want to play again? ").lower()
@@ -33,23 +34,45 @@ def win():  # Command to run when the script wins
     else:
         yon2()
     
-def bye():  # Command to run when player does't want to play again after script winning
+def bye():
     print("Come back again!!")
     while True:
         sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        time.sleep(0.2)
+        time.sleep(0.2)
 
-def Q():    # Made for counting the questions
+def Q():
     print(f"Question {ask}")
 
-def end():  # Used when player doesn't want to play before the script wins
+def end():
     print("Shame, come again next time!!")
     while True:
         sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        sys.exit()
+        time.sleep(0.2)
+        time.sleep(0.2)
 
-def yon():  # Used when player types anythong other than yes or no
+def yon():
     print("Sorry, you can only answer Yes or No!")
 
-def yon2(): # Used after script wins and player still types anything other than yes or no
+def yon2():
     print("This late in the game and you still can\'t follow the rules!!")
     print("Looks like you\'ll just have to play again!! :D")
     R()
@@ -77,7 +100,7 @@ while True:
         yon()
 
 while ask < 20:
-    ask += 1
+    ask += + 1
     Q()
     answer= input("Are you a cat? ").lower()
     if answer == "yes":
@@ -87,11 +110,10 @@ while ask < 20:
         print("Welp, looks like I\'m a Bear!!")
         win()
     else:
-        ask -= 1
         yon()
 
 while ask < 20:
-    ask += 1
+    ask += + 1
     Q()
     answer= input("Do I have stripes? ").lower()
     if answer == "yes":
@@ -101,5 +123,5 @@ while ask < 20:
         print("Welp, looks like I\'m a Lion!!")
         win()
     else:
-        ask -= 1
+        ask += - 1
         yon()
