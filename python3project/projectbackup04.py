@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
 import time
-
 def main():
     confirm= " "
     gamemode= " "
@@ -52,7 +50,6 @@ def main():
             print("You may also go back to the Starting Screen with (Menu)")
             time.sleep(2)
             print("----------------------")
-
 def hard():
     confirm= " "
     answer= " "
@@ -116,7 +113,6 @@ def hard():
         time.sleep(0.5)
         print("----------------------")
         main()
-
     while True:
         print("Welcome!! This is Hard mode 20 Questions game!")
         time.sleep(1)
@@ -224,11 +220,11 @@ def hard():
                 menu()
             else:
                 rules()
-
 def normal():
-    print("Coming Soon!!")
+    print("*****Coming Soon*****")
+    print("This game mode is currently unavailable!!")
+    time.sleep(2)
     print("----------------------")
-  
 def easy():
     print("*****Coming Soon*****")
     print("This game mode is currently unavailable!!")
