@@ -53,7 +53,7 @@ def main():
         else:
             print("Enter (Hard) (Normal) (Easy) only!!")
             print("You can always Exit by typing (Exit) (Q(Quit)")
-            print("You may also move to the Starting Menu with (Menu)")
+            print("You may also go back to the Starting Menu with (Menu)")
             time.sleep(2)
             print("----------------------")
 def hard():
@@ -62,7 +62,7 @@ def hard():
     def rules():
         print("Enter (Y(Yes) (N(No) only!!")
         print("You can always Exit by typing (Exit) (Q(Quit)")
-        print("You may also move to the Starting Menu with (Menu)")
+        print("You may also go back to the Starting Menu with (Menu)")
         time.sleep(2)
         print("----------------------")
     def menu():
