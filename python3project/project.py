@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import time
-def main():
+def mainmenu():
     confirm= " "
     gamemode= " "
     while True:
@@ -31,11 +31,11 @@ def main():
                 print("----------------------")
                 continue
         elif gamemode == "menu":
-            print("You will lose all progress! Are you sure you want to exit to the Starting Menu?")
+            print("You will lose all progress! Are you sure you want to exit to the Main Menu?")
             confirm= input("Type (Y(Yes) to confirm!: ").lower()
             print("----------------------")
             if confirm == "yes" or confirm == "y":
-                print("*****Moving to Starting Menu*****")
+                print("*****Moving to Main Menu*****")
                 time.sleep(0.5)
                 print(".")
                 time.sleep(0.5)
@@ -44,7 +44,7 @@ def main():
                 print(".")
                 time.sleep(0.5)
                 print("----------------------")
-                main()
+                mainmenu()
             else:
                 print("*****Returning to game*****")
                 time.sleep(1)
@@ -53,7 +53,7 @@ def main():
         else:
             print("Enter (Hard) (Normal) (Easy) only!!")
             print("You can always Exit by typing (Exit) (Q(Quit)")
-            print("You may also move to the Starting Menu with (Menu)")
+            print("You may also move to the Main Menu with (Menu)")
             time.sleep(2)
             print("----------------------")
 def hard():
@@ -62,15 +62,15 @@ def hard():
     def rules():
         print("Enter (Y(Yes) (N(No) only!!")
         print("You can always Exit by typing (Exit) (Q(Quit)")
-        print("You may also move to the Starting Menu with (Menu)")
+        print("You may also move to the Main Menu with (Menu)")
         time.sleep(2)
         print("----------------------")
     def menu():
-        print("You will lose all progress! Are you sure you want to exit to the Starting Menu?")
+        print("You will lose all progress! Are you sure you want to exit to the Main Menu?")
         confirm= input("Type (Y(Yes) to confirm!: ").lower()
         print("----------------------")
         if confirm == "yes" or confirm == "y":
-            print("*****Moving to Starting Menu*****")
+            print("*****Moving to Main Menu*****")
             time.sleep(0.5)
             print(".")
             time.sleep(0.5)
@@ -79,7 +79,7 @@ def hard():
             print(".")
             time.sleep(0.5)
             print("----------------------")
-            main()
+            mainmenu()
         else:
             print("*****Returning to game*****")
             time.sleep(1)
@@ -163,7 +163,7 @@ def hard():
                 print("----------------------")
                 break
             elif answer == "no" or answer == "n":
-                print("Welp, looks like I\'m a Bear!!")
+                print("Welp, looks like you\'re a Bear!!")
                 time.sleep(1)
                 print("----------------------")
                 print("Thanks for playing!!")
@@ -171,7 +171,7 @@ def hard():
                 time.sleep(1)
                 print("----------------------")
                 print("Do you want to play again?")
-                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Starting Menu!: ").lower()
+                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!: ").lower()
                 print("----------------------")
                 if answer == "yes" or answer == "y":
                     restart()
@@ -192,7 +192,7 @@ def hard():
             answer= input("Do I have stripes?: ").lower()
             print("----------------------")
             if answer == "yes" or answer == "y":
-                print("Welp, looks like I\'m a Tiger!!")
+                print("Welp, looks like you\'re a Tiger!!")
                 time.sleep(1)
                 print("----------------------")
                 print("Thanks for playing!!")
@@ -200,7 +200,7 @@ def hard():
                 time.sleep(1)
                 print("----------------------")
                 print("Do you want to play again?")
-                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Starting Menu!: ").lower()
+                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!: ").lower()
                 print("----------------------")
                 if answer == "yes" or answer == "y":
                     restart()
@@ -211,7 +211,7 @@ def hard():
                 else:
                     troll()
             elif answer == "no" or answer == "n":
-                print("Welp, looks like I\'m a Lion!!")
+                print("Welp, looks like you\'re a Lion!!")
                 time.sleep(1)
                 print("----------------------")
                 print("Thanks for playing!!")
@@ -219,7 +219,7 @@ def hard():
                 time.sleep(1)
                 print("----------------------")
                 print("Do you want to play again?")
-                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Starting Menu!: ").lower()
+                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!: ").lower()
                 print("----------------------")
                 if answer == "yes" or answer == "y":
                     restart()
@@ -246,5 +246,8 @@ def easy():
     time.sleep(2)
     print("----------------------")
          
+def main():
+    mainmenu()
+
 if __name__ == "__main__":
     main()
