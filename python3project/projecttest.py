@@ -221,6 +221,44 @@ def hard():
         time.sleep(0.1)
         print("----------------------")
         hard()
+    def lion():
+        print("Welp, looks like you\'re a Lion!!")
+        print("""                          ,   __, ,
+           _.._         )\/(,-' (-' `.__
+          /_   `-.      )'_      ` _  (_    _.---._
+         // \     `-. ,'   `-.    _\`.  `.,'   ,--.\ 
+        // -.\       `        `.  \`.   `/   ,'   ||
+        || _ `\_         ___    )  )     \  /,-'  ||
+        ||  `---\      ,'__ \   `,' ,--.  \/---. //
+         \   .---`.   / /  | |      |,-.\ |`-._ //
+          `..___.'|   \ |,-| |      |_  )||\___//
+            `.____/    \ \O| |      \o)// |____/
+                 /      `---/        \-'  \ 
+                 |        ,'|,--._.--')    \ 
+                 \       /   `n     n'\    /
+                  `.   `<   .::`-,-'::.) ,'    
+                    `.   \-.____,^.   /,'
+                      `. ;`.,-V-.-.`v'
+                        \| \     ` \|\ 
+                         ;  `-^---^-'/
+                          `-.______,'""")
+        time.sleep(0.5)
+        print("----------------------")
+        print("Thanks for playing!!")
+        print("I hope you had fun!!")
+        time.sleep(0.5)
+        print("----------------------")
+        print("Do you want to play again?")
+        answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!: ").lower()
+        print("----------------------")
+        if answer == "yes" or answer == "y":
+            restart()
+        elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+            quit()
+        elif answer == "menu":
+            menu()
+        else:
+            troll()
     while True:
         print("Welcome!! This is Hard mode 20 Questions game!")
         time.sleep(0.5)
@@ -329,43 +367,7 @@ def hard():
                 else:
                     troll()
             elif answer == "no" or answer == "n":
-                print("Welp, looks like you\'re a Lion!!")
-                print("""                           ,   __, ,
-           _.._         )\/(,-' (-' `.__
-          /_   `-.      )'_      ` _  (_    _.---._
-         // \     `-. ,'   `-.    _\`.  `.,'   ,--.\ 
-        // -.\       `        `.  \`.   `/   ,'   ||
-        || _ `\_         ___    )  )     \  /,-'  ||
-        ||  `---\      ,'__ \   `,' ,--.  \/---. //
-         \   .---`.   / /  | |      |,-.\ |`-._ //
-          `..___.'|   \ |,-| |      |_  )||\___//
-            `.____/    \ \O| |      \o)// |____/
-                 /      `---/        \-'  \ 
-                 |        ,'|,--._.--')    \ 
-                 \       /   `n     n'\    /
-                  `.   `<   .::`-,-'::.) ,'    
-                    `.   \-.____,^.   /,'
-                      `. ;`.,-V-.-.`v'
-                        \| \     ` \|\ 
-                         ;  `-^---^-'/
-                          `-.______,'""")
-                time.sleep(0.5)
-                print("----------------------")
-                print("Thanks for playing!!")
-                print("I hope you had fun!!")
-                time.sleep(0.5)
-                print("----------------------")
-                print("Do you want to play again?")
-                answer= input("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!: ").lower()
-                print("----------------------")
-                if answer == "yes" or answer == "y":
-                    restart()
-                elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
-                    quit()
-                elif answer == "menu":
-                    menu()
-                else:
-                    troll()
+                lion()
             elif answer == "exit" or answer == "q" or answer == "quit":
                 quit()
             elif answer == "menu":
