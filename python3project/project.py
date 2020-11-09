@@ -100,7 +100,6 @@ def restart():
     print("     +8-=-=-=-=-=-8+")
     time.sleep(0.1)
     print("----------------------")
-    hard()
 def troll():
     print("This late in the game and you still can\'t follow the rules!!")
     time.sleep(0.5)
@@ -141,26 +140,6 @@ def troll():
     print("     +8-=-=-=-=-=-8+")
     time.sleep(0.1)
     print("----------------------")
-    hard()
-def win():
-    time.sleep(0.5)
-    print("----------------------")
-    print("Thanks for playing!!")
-    print("I hope you had fun!!")
-    time.sleep(0.5)
-    print("----------------------")
-    print("Do you want to play again?")
-    print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
-    answer= input(">> ").lower()
-    print("----------------------")
-    if answer == "yes" or answer == "y":
-        restart()
-    elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
-        quit()
-    elif answer == "menu":
-        menu()
-    else:
-        troll()
 def mainmenu():
     while True:
         print("*****WELCOME*****")
@@ -240,7 +219,26 @@ def hard():
           \  \      (      /
            )  '._____)    /    
          (((____.--(((____/""")
-                win()
+                time.sleep(0.5)
+                print("----------------------")
+                print("Thanks for playing!!")
+                print("I hope you had fun!!")
+                time.sleep(0.5)
+                print("----------------------")
+                print("Do you want to play again?")
+                print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+                answer= input(">> ").lower()
+                print("----------------------")
+                if answer == "yes" or answer == "y":
+                    restart()
+                    hard()
+                elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+                    quit()
+                elif answer == "menu":
+                    menu()
+                else:
+                    troll()
+                    hard()
             elif answer == "exit" or answer == "q" or answer == "quit":
                 quit()
             elif answer == "menu":
@@ -264,7 +262,26 @@ def hard():
              `-'      |  -| =|\_  \  |-' |
                    __/   /_..-' `  ),'  //
                   ((__.-'((___..-'' \__.'""")
-                win()
+                time.sleep(0.5)
+                print("----------------------")
+                print("Thanks for playing!!")
+                print("I hope you had fun!!")
+                time.sleep(0.5)
+                print("----------------------")
+                print("Do you want to play again?")
+                print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+                answer= input(">> ").lower()
+                print("----------------------")
+                if answer == "yes" or answer == "y":
+                    restart()
+                    hard()
+                elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+                    quit()
+                elif answer == "menu":
+                    menu()
+                else:
+                    troll()
+                    hard()
             elif answer == "no" or answer == "n":
                 print("Welp, looks like you\'re a Lion!!")
                 print("""                           ,   __, ,
@@ -286,7 +303,26 @@ def hard():
                         \| \     ` \|\ 
                          ;  `-^---^-'/
                           `-.______,'""")
-                win()
+                time.sleep(0.5)
+                print("----------------------")
+                print("Thanks for playing!!")
+                print("I hope you had fun!!")
+                time.sleep(0.5)
+                print("----------------------")
+                print("Do you want to play again?")
+                print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+                answer= input(">> ").lower()
+                print("----------------------")
+                if answer == "yes" or answer == "y":
+                    restart()
+                    hard()
+                elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+                    quit()
+                elif answer == "menu":
+                    menu()
+                else:
+                    troll()
+                    hard()
             elif answer == "exit" or answer == "q" or answer == "quit":
                 quit()
             elif answer == "menu":

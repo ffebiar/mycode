@@ -285,6 +285,7 @@ def normal():
         count += 1
         zone= random.choice(list(usa))
         x= zone
+        state= random.choice(list(usa[x]))
         print(f"Question {count}!")
         print(f"Is your state in the {x} zone?")
         answer= input(">> ").lower()
@@ -308,28 +309,8 @@ def normal():
             count -= 1
     while count < 20:
         count += 1
-        state= random.choice(list(usa[x]))
-        print(f"Question {count}!")
-        print(f"Is the state you choose {state}?")
-        answer= input(">> ").lower()
-        print("----------------------")
-        if answer == "yes" or answer == "y":
-            print("Looks like I WIN!!")
-            time.sleep(0.5)
-            print("----------------------")
-            break
-        elif answer == "no" or answer == "n":
-            print("Welp!")
-            print("----------------------")
-        elif answer == "exit" or answer == "q" or answer == "quit":
-            quit()
-            count -= 1
-        elif answer == "menu":
-            menu()
-            count -= 1
-        else:
-            rules()
-            count -= 1
+        print(count)
+        print(x)
    
 
 def test():

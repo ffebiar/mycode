@@ -84,9 +84,10 @@ usa = {
             
          }
 
-#zone= random.choice(list(usa))
-#state= random.choice(list(usa['Eastern Standard Time']))
+zone= random.choice(list(usa))
+state= random.choice(list(usa['Eastern Standard Time']))
 answer= " "
+count= 0
 
 def rules():
     print("Enter (Y(Yes) (N(No) only!!")
@@ -252,7 +253,6 @@ def mainmenu():
             time.sleep(0.5)
             print("----------------------")
 def normal():
-    count= 0 
     print("Welcome!! This is Normal mode 20 Questions game!")
     time.sleep(0.5)
     print("----------------------")
@@ -280,13 +280,10 @@ def normal():
             menu()
         else:
             rules()
-    print("*****Beginning Normal mode*****")
-    while count < 20:
-        count += 1
-        zone= random.choice(list(usa))
-        x= zone
+    while count == 20:
+        print("*****Beginning Normal mode*****")
         print(f"Question {count}!")
-        print(f"Is your state in the {x} zone?")
+        print("Are you a cat?")
         answer= input(">> ").lower()
         print("----------------------")
         if answer == "yes" or answer == "y":
@@ -295,65 +292,96 @@ def normal():
             print("----------------------")
             break
         elif answer == "no" or answer == "n":
-            print("Welp!")
+            print("Welp, looks like you\'re a Bear!!")
+            time.sleep(0.5)
             print("----------------------")
+            print("Thanks for playing!!")
+            print("I hope you had fun!!")
+            time.sleep(0.5)
+            print("----------------------")
+            print("Do you want to play again?")
+            print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+            answer= input(">> ").lower()
+            print("----------------------")
+            if answer == "yes" or answer == "y":
+                restart()
+                normal()
+            elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+                quit()
+            elif answer == "menu":
+                menu()
+            else:
+                troll()
+                normal()
         elif answer == "exit" or answer == "q" or answer == "quit":
             quit()
-            count -= 1
         elif answer == "menu":
             menu()
-            count -= 1
         else:
             rules()
-            count -= 1
-    while count < 20:
-        count += 1
-        state= random.choice(list(usa[x]))
-        print(f"Question {count}!")
-        print(f"Is the state you choose {state}?")
+    while True:
+        print("Question 2")
+        print("Do I have stripes?")
         answer= input(">> ").lower()
         print("----------------------")
         if answer == "yes" or answer == "y":
-            print("Looks like I WIN!!")
+            print("Welp, looks like you\'re a Tiger!!")
             time.sleep(0.5)
             print("----------------------")
-            break
-        elif answer == "no" or answer == "n":
-            print("Welp!")
+            print("Thanks for playing!!")
+            print("I hope you had fun!!")
+            time.sleep(0.5)
             print("----------------------")
+            print("Do you want to play again?")
+            print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+            answer= input(">> ").lower()
+            print("----------------------")
+            if answer == "yes" or answer == "y":
+                restart()
+                normal()
+            elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+                quit()
+            elif answer == "menu":
+                menu()
+            else:
+                troll()
+                normal()
+        elif answer == "no" or answer == "n":
+            print("Welp, looks like you\'re a Lion!!")
+            time.sleep(0.5)
+            print("----------------------")
+            print("Thanks for playing!!")
+            print("I hope you had fun!!")
+            time.sleep(0.5)
+            print("----------------------")
+            print("Do you want to play again?")
+            print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+            answer= input(">> ").lower()
+            print("----------------------")
+            if answer == "yes" or answer == "y":
+                restart()
+                normal()
+            elif answer == "exit" or answer == "q" or answer == "quit" or answer == "no" or answer == "n":
+                quit()
+            elif answer == "menu":
+                menu()
+            else:
+                troll()
+                normal()
         elif answer == "exit" or answer == "q" or answer == "quit":
             quit()
-            count -= 1
         elif answer == "menu":
             menu()
-            count -= 1
         else:
-            rules()
-            count -= 1
-   
+            rules()            
+
 
 def test():
-
-    zone= random.choice(list(usa))
     x= zone
-    state= random.choice(list(usa[x]))
-    print(zone)
+    print(x)
     print(state)
-
-    zone= random.choice(list(usa))
-    x= zone
-    state= random.choice(list(usa[x]))
-    print(zone)
-    print(state)
-
-    zone= random.choice(list(usa))
-    x= zone
-    state= random.choice(list(usa[x]))
-    print(zone)
-    print(state)
-#    print(x)
-#    print(x)
-#    print(x)
+    print(x)
+    print(x)
                                                   
 def main():
     normal()
