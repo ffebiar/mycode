@@ -3,7 +3,6 @@
 import time
 import random
 
-## This is the dictionary for Normal Mode
 usa = {
 
             'Alaska Standard Time' :
@@ -86,14 +85,14 @@ usa = {
          }
 
 answer= " "
-## Used when player does not enter the correct input
+
 def rules():
     print("Enter (Y(Yes) (N(No) only!!")
     print("You can always Exit by typing (Exit) (Q(Quit)")
     print("You may also move to the Main Menu with (Menu)")
     time.sleep(0.5)
     print("----------------------")
-## Navigate to the Main Menu
+
 def menu():
     print("You will lose all progress! Are you sure you want to exit to the Main Menu?")
     print("Type (Y(Yes) to confirm!")
@@ -138,7 +137,7 @@ def menu():
         print("*****Returning to game*****")
         time.sleep(0.5)
         print("----------------------")
-## Used to confirm exit()
+
 def quit():
     print("You will lose all progress! Are you sure you want to exit?")
     print("Type (Y(Yes) to confirm!")
@@ -161,7 +160,7 @@ def quit():
         print("*****Returning to game*****")
         time.sleep(0.5)
         print("----------------------")
-## Used to restart the game from the begining 
+
 def restart():
     print("*****Restarting game*****")
     time.sleep(0.1)
@@ -196,7 +195,7 @@ def restart():
     print("     +8-=-=-=-=-=-8+")
     time.sleep(0.1)
     print("----------------------")
-## Used on players who don't listen 
+
 def troll():
     print("This late in the game and you still can\'t follow the rules!!")
     time.sleep(0.5)
@@ -204,10 +203,8 @@ def troll():
     print("Looks like you\'ll just have to play again!! :D")
     time.sleep(0.5)
     print("----------------------")
-    input(">>")
-    print("----------------------")
     restart()
-## Main Menu of the game
+    
 def mainmenu():
     print("*****WELCOME*****")
     print("""
@@ -248,7 +245,7 @@ def mainmenu():
             print("You may also move to the Main Menu with (Menu)")
             time.sleep(0.5)
             print("----------------------")
-## Hard Mode of the game
+
 def hard():
     print("*****WELCOME*****") 
     print("""
@@ -421,7 +418,7 @@ def hard():
             menu()
         else:
             rules()            
-## Normal Mode of the game
+
 def normal():
     count= 0 
     print("*****WELCOME*****") 
@@ -568,7 +565,7 @@ def normal():
     else:
         troll()
         normal()
-## Easy Mode of the game (not really)
+
 def easy():
     print("*****Coming Soon*****")
     print("""
@@ -582,44 +579,9 @@ def easy():
     print("This game mode is currently unavailable!!")
     time.sleep(0.5)
     print("----------------------")
-    input(">>")
-    print("----------------------")
-    print("*****Moving to Selection*****")
-    time.sleep(0.1)
-    print("       +8-=-=-=-=-=-8+")
-    time.sleep(0.1)
-    print("        | ,.-'''-., |")
-    time.sleep(0.1)
-    print("        |/         \|")
-    time.sleep(0.1)
-    print("        |\:.     .:/|")
-    time.sleep(0.1)
-    print("        | \:::::::/ |")
-    time.sleep(0.1)
-    print("        |  \:::::/  |")
-    time.sleep(0.1)
-    print("        |   \:::/   |")
-    time.sleep(0.1)
-    print("        |    ):(    |")
-    time.sleep(0.1)
-    print("        |   / . \   |")
-    time.sleep(0.1)
-    print("        |  /  .  \  |")
-    time.sleep(0.1)
-    print("        | /   .   \ |")
-    time.sleep(0.1)
-    print("        |/   .:.   \|")
-    time.sleep(0.1)
-    print("        |\.:::::::./|")
-    time.sleep(0.1)
-    print("        | '--___--' |")
-    time.sleep(0.1)
-    print("       +8-=-=-=-=-=-8+")
-    time.sleep(0.1)
-    print("----------------------")
-## Main fuction of the script
+         
 def main():
     mainmenu()
-## Used to keep the script from running if imported
+
 if __name__ == "__main__":
     main()
