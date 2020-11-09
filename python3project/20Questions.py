@@ -2,10 +2,8 @@
 
 import time
 import random
-
 ## This is the dictionary for Normal Mode
 usa = {
-
             'Alaska Standard Time' :
                             ['Alaska'],
 
@@ -82,7 +80,6 @@ usa = {
 			     'New Hampshire',
 			     'Maine',
 			     'District of Columbia']
-
          }
 
 answer= " "
