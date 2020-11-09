@@ -509,7 +509,7 @@ def normal():
             time.sleep(0.5)
             print("----------------------")
             print("Do you want to play again?")
-            print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+            print("Enter (Y(Yes) to restart Normal mode and (Menu) to exit to the Main Menu!")
             answer= input(">> ").lower()
             print("----------------------")
             if answer == "yes" or answer == "y":
@@ -535,7 +535,6 @@ def normal():
         else:
             rules()
             count -= 1
-
     print("Looks like I LOST!!")
     print("""
 ██╗    ██╗██╗███╗   ██╗███╗   ██╗███████╗██████╗ ██╗██╗
@@ -553,7 +552,7 @@ def normal():
     time.sleep(0.5)
     print("----------------------")
     print("Do you want to play again?")
-    print("Enter (Y(Yes) to restart Hard mode and (Menu) to exit to the Main Menu!")
+    print("Enter (Y(Yes) to restart Normal mode and (Menu) to exit to the Main Menu!")
     answer= input(">> ").lower()
     print("----------------------")
     if answer == "yes" or answer == "y":
