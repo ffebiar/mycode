@@ -91,11 +91,15 @@ usa = {
             
          }
 
-zone= usa.keys()
+zone= random.choice(list(usa))
 
 def normal():
-    for x in usa:
-        print(x)
+    print(zone)
+    #print(random.choice(list(usa.keys())))
+    #print(random.choice(list(usa.items())))
+    #print(random.choice(list(usa)))
+    #for x in usa:
+    #    print(x)
                                                   
 def main():
     normal()

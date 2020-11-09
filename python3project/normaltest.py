@@ -5,28 +5,24 @@ import random
 
 usa = {
 
-            'Alaska Standard Time' : { 
-                  'state' : ['Alaska']																					
-                },
+            'Alaska Standard Time' : 
+                            ['Alaska'],
 
-            'Hawaii Standard Time' : {
-                  'state' : ['Hawaii']							
-                },
+            'Hawaii Standard Time' : 
+                            ['Hawaii'],
 
-            'Pacific Standard Time' : { 
-                  'state' : ['Washington',
+            'Pacific Standard Time' : 
+                            ['Washington',
                              'Oragan',
-			     'Nevada',
-			     'California',
-			     'Idaho']
-                },
+          		     'Nevada',
+          		     'California',
+              		     'Idaho'],
 
-            'Arizona Mountain Standard Time' : { 
-                  'state' : ['Arizona']
-                },
+            'Arizona Mountain Standard Time' : 
+                            ['Arizona'],
 
-            'Mountain Standard Time' : { 
-                  'state' : ['Montana',
+            'Mountain Standard Time' :  
+                            ['Montana',
 			     'Idaho',
 			     'Wyoming',
 			     'Utah',
@@ -37,11 +33,10 @@ usa = {
 			     'North Dakota',
 			     'South Dakota',
 			     'Nebraska',
-			     'Kansas']
-                },
+			     'Kansas'],
 
-            'Central Standard Time' : { 
-                  'state' : ['North Dakota',
+            'Central Standard Time' :  
+                            ['North Dakota',
 			     'South Dakota',
 			     'Nebraska',
 			     'Kansas',
@@ -60,11 +55,10 @@ usa = {
 			     'Tennessee',
 			     'Mississippi',
 			     'Alabama',
-			     'Florida']
-                },
+			     'Florida'],
 
-            'Eastern Standard Time' : { 
-                  'state' : ['Michigan',
+            'Eastern Standard Time' : 
+                            ['Michigan',
 			     'Indiana',
 			     'Kentucky',
 			     'Tennessee',
@@ -87,15 +81,22 @@ usa = {
 			     'New Hampshire',
 			     'Maine',
 			     'District of Columbia']
-                }
             
          }
 
-zone= usa.keys()
-
+zone= random.choice(list(usa))
+state= random.choice(list(usa['Eastern Standard Time']))
 def normal():
-    for x in usa:
-        print(x)
+    x= zone
+    print(x)
+    print(state)
+    print(x)
+    print(x)
+    #print(random.choice(list(usa.keys())))
+    #print(random.choice(list(usa.items())))
+    #print(random.choice(list(usa)))
+    #for x in usa:
+    #    print(x)
                                                   
 def main():
     normal()
